@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sachin Gawanu favicon">
+  <defs>
+    <linearGradient id="g" x1="12" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#020617"/>
+  <rect x="6" y="6" width="52" height="52" rx="15" fill="url(#g)"/>
+  <path d="M20.5 39.2c2.2 2.1 5.2 3.1 8.8 3.1 4.7 0 7.7-1.9 7.7-5 0-2.8-2-4.2-7-5.2l-3-.6c-6.1-1.2-9.4-4.3-9.4-9 0-5.6 4.7-9.4 11.7-9.4 4.6 0 8.3 1.2 11.2 3.7l-3.5 5.1c-2-1.7-4.5-2.6-7.5-2.6-3.4 0-5.4 1.4-5.4 3.7 0 2.2 1.7 3.5 6.1 4.4l3.1.6c6.8 1.4 10.3 4.4 10.3 9.1 0 6.3-5.2 10.4-13.7 10.4-5.3 0-9.8-1.5-13-4.5l3.6-4.8Z" fill="#020617"/>
+</svg>
