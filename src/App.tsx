@@ -341,6 +341,26 @@ function App() {
                   {item.label}
                 </a>
               ))}
+              <div className="mt-3 flex flex-col gap-2.5 border-t border-white/10 pt-3">
+                <a
+                  href="https://simplyrecon.in"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-cyan-300/30 bg-cyan-300/10 px-4 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-300/20"
+                >
+                  SimplyRecon
+                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                </a>
+                <a
+                  href="https://clickdocs.co.in"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                >
+                  ClickDocs
+                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                </a>
+              </div>
             </div>
           </div>
         )}
@@ -356,7 +376,7 @@ function App() {
                 <Sparkles className="h-4 w-4" aria-hidden="true" />
                 Senior E-commerce & Operations Manager · 14+ years
               </div>
-              <h1 className="animate-fade-up mt-7 max-w-4xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-7xl">
+              <h1 className="animate-fade-up mt-7 max-w-4xl text-3xl font-black tracking-tight text-white sm:text-5xl lg:text-7xl">
                 I build reliable operations, reconciliation systems and automation for growing businesses.
               </h1>
               <p className="animate-fade-up mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
@@ -380,11 +400,11 @@ function App() {
                 </a>
               </div>
 
-              <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {stats.map((stat) => (
                   <div key={stat.label} className="rounded-3xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur">
-                    <p className="text-3xl font-black text-white">{stat.value}</p>
-                    <p className="mt-2 text-sm leading-5 text-slate-400">{stat.label}</p>
+                    <p className="text-2xl font-black text-white sm:text-3xl">{stat.value}</p>
+                    <p className="mt-1 text-xs leading-5 text-slate-400 sm:mt-2 sm:text-sm">{stat.label}</p>
                   </div>
                 ))}
               </div>
@@ -654,7 +674,7 @@ function App() {
                 <div className="absolute left-4 top-4 hidden h-[calc(100%-2rem)] w-px bg-gradient-to-b from-cyan-300 via-white/20 to-transparent sm:block" aria-hidden="true" />
                 <div className="grid gap-5">
                   {experiences.map((experience) => (
-                    <article key={`${experience.company}-${experience.period}`} className="relative rounded-[2rem] border border-white/10 bg-slate-950/75 p-6 sm:ml-12">
+                    <article key={`${experience.company}-${experience.period}`} className="relative rounded-[2rem] border border-white/10 border-l-cyan-300/40 bg-slate-950/75 p-5 border-l-4 sm:border-l sm:p-6 sm:ml-12">
                       <span className="absolute -left-[3.25rem] top-6 hidden h-8 w-8 rounded-full border border-cyan-300/40 bg-slate-950 ring-8 ring-slate-950 sm:grid sm:place-items-center">
                         <span className="h-3 w-3 rounded-full bg-cyan-300" />
                       </span>
@@ -821,7 +841,9 @@ function App() {
         <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>
             <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-cyan-300 to-blue-500 text-sm font-black text-slate-950">SG</span>
+              <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-2xl border border-cyan-300/30 bg-gradient-to-br from-cyan-300 to-blue-500 p-0.5 shadow-lg shadow-cyan-500/20">
+                <img src="/sachin-profile.jpg" alt="Sachin Gawanu" className="h-full w-full rounded-[0.75rem] object-cover" />
+              </span>
               <div>
                 <p className="font-black text-white">Sachin Gawanu</p>
                 <p className="text-sm text-slate-400">E-commerce operations, reconciliation and automation.</p>

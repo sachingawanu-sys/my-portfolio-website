@@ -33,8 +33,16 @@ textarea {
   font: inherit;
 }
 
+/* Prevent auto-zoom on iOS when tapping inputs */
+@media screen and (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+}
+
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @keyframes fade-up {
